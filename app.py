@@ -9,11 +9,11 @@ import plotly.express as px
 from sklearn.preprocessing import LabelEncoder
 
 # ---------- Config ----------
-PROJECT_FOLDER = r"C:\Users\susen\Desktop\RealEstateInvestmentAdvisor"
-CLEANED_GZ = os.path.join(PROJECT_FOLDER, "cleaned_housing_data.csv.gz")
-MODEL_PATH = os.path.join(PROJECT_FOLDER, "model_gbr.pkl")
-ENC_LOCALITY_PATH = os.path.join(PROJECT_FOLDER, "encoder_locality.pkl")  # optional
-ONEHOT_COLS_PATH = os.path.join(PROJECT_FOLDER, "onehot_columns.pkl")     # optional (list)
+# Use relative paths so it works on Streamlit Cloud
+CLEANED_GZ = "cleaned_housing_data.csv.gz"
+MODEL_PATH = "model_gbr.pkl"
+ENC_LOCALITY_PATH = "encoder_locality.pkl"   # optional
+ONEHOT_COLS_PATH = "onehot_columns.pkl"      # optional (list)
 
 st.set_page_config(page_title="Real Estate Investment Advisor", layout="wide")
 
